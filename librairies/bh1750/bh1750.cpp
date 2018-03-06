@@ -43,8 +43,9 @@ void bh1750::reset()
 	delay(10);
 }
 
-uint16_t bh1750::lecture_lumiere(byte mode_mesure)
+uint16_t bh1750::lecture_lumiere(uint8_t adresse, byte mode_mesure)
 {
+	BH1750_I2CADDR = adresse;
 	uint8_t BH1750_MODE = mode_mesure;
 	uint16_t luminosite = 0;
 	switch (BH1750_MODE)  // vérification du mode à configurer

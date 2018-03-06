@@ -35,7 +35,7 @@ class bh1750
 			// initialisation de la librairie
 			void begin(uint8_t adresse, int sda, int scl); 
 		#endif
-		uint16_t lecture_lumiere(byte mode_mesure);
+		uint16_t lecture_lumiere(uint8_t adresse, byte mode_mesure);
 
 	private:
 		void reset();
