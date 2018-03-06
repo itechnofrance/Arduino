@@ -22,7 +22,7 @@ void setup()
 
 void loop() 
 {
-  uint16_t lux = mesure_lumiere.lecture_lumiere(MODE_UNE_MESURE_HAUTE_RESOLUTION);  // effectue une mesure
+  uint16_t lux = mesure_lumiere.lecture_lumiere(0x23, MODE_UNE_MESURE_HAUTE_RESOLUTION);  // effectue une mesure
   Serial.print("Luminosité : ");
   Serial.print(lux);
   Serial.println(" Lux");
