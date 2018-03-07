@@ -14,8 +14,8 @@
 #define BH1750_RESET 0x07  // Mise à 0 du registre de données seulement en mode POWER_ON
 
 uint8_t BH1750_I2CADDR;	 // adresse I2C du capteur BH1750	
-// adresse 0x23 si broche ADD non branchée ou relié à 5v ou 3.3v
-// adresse 0x5c si broche ADD branchée sur Ov
+// adresse 0x23 si broche ADD non branchée ou relié à 0v
+// adresse 0x5c si broche ADD branchée sur 5v ou 3.3v
 
 void bh1750::begin(uint8_t adresse, int sda, int scl)
 {
