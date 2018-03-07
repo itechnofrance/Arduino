@@ -12,8 +12,8 @@ void setup()
 {
   Serial.begin(115200);
   mesure_lumiere.begin(0x23);  // initialise la librairie BH1750 pour une utilisation Arduino Nano
-  // adresse 0x23 si broche ADD non branchée ou relié à 5v ou 3.3v
-  // adresse 0x5c si broche ADD branchée sur Ov
+  // adresse 0x23 si broche ADD non branchée ou relié à 0v
+  // adresse 0x5c si broche ADD branchée sur 5v ou 3.3v
 }
 
 void loop() 
